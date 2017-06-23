@@ -1,0 +1,261 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="co.molzol.molzol.FlipkartOffersFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/offers"
+        android:id="@+id/offers"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="1dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:background="@android:color/background_light"
+        android:textColor="@color/primary_dark_material_dark" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer3"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:onClick="goToStore">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/amazonImage"
+            android:src="@drawable/amazon"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amazon - Amazon Exclusives"
+            android:id="@+id/offer3text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/amazonImage"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Amazon Exclusives Store"
+            android:id="@+id/offer3text2"
+            android:layout_below="@+id/offer3text1"
+            android:layout_toEndOf="@+id/amazonImage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer1"
+        android:layout_marginBottom="1dp"
+        android:onClick="goToStore"
+        android:clickable="true">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/snapDealImage"
+            android:src="@drawable/snapdeal"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SnapDeal - Exclusive Launches"
+            android:id="@+id/offer1text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/snapDealImage"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="The Exclusive Store"
+            android:id="@+id/offer1text2"
+            android:layout_below="@+id/offer1text1"
+            android:layout_toEndOf="@+id/snapDealImage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer5"
+        android:clickable="true"
+        android:onClick="goToStore">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/flipKartImage"
+            android:src="@drawable/flipkart"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="FlipKart - e-offers"
+            android:id="@+id/offer5text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/flipKartImage"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Best offers on Laptops and Tablets"
+            android:id="@+id/offer5text2"
+            android:layout_below="@+id/offer5text1"
+            android:layout_toEndOf="@+id/flipKartImage"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer2"
+        android:layout_marginBottom="1dp"
+        android:clickable="true"
+        android:onClick="goToStore">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/snapDealImage2"
+            android:src="@drawable/snapdeal"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="SnapDeal - Deals Of The Day"
+            android:id="@+id/offer2text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/snapDealImage2"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Exciting offers for today"
+            android:id="@+id/offer2text2"
+            android:layout_below="@+id/offer2text1"
+            android:layout_toEndOf="@+id/snapDealImage2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer4"
+        android:clickable="true"
+        android:onClick="goToStore"
+        android:layout_marginBottom="1dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/amazonImage2"
+            android:src="@drawable/amazon"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amazon - Deals Of The Day"
+            android:id="@+id/offer4text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/amazonImage2"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="New Deals. Every Day."
+            android:id="@+id/offer4text2"
+            android:layout_below="@+id/offer4text1"
+            android:layout_toEndOf="@+id/amazonImage2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/background_light"
+        android:id="@+id/offer6"
+        android:clickable="true"
+        android:onClick="goToStore">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/flipKartImage2"
+            android:src="@drawable/flipkart"
+            android:scaleType="fitXY"
+            android:layout_marginRight="30px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="FlipKart - Deals Of The Day"
+            android:id="@+id/offer6text1"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/flipKartImage2"
+            android:textColor="@color/material_grey_900" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Exclusive deals for you"
+            android:id="@+id/offer6text2"
+            android:layout_below="@+id/offer6text1"
+            android:layout_toEndOf="@+id/flipKartImage2"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/material_grey_800" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

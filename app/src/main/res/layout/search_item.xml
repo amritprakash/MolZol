@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/background_light"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp"
+    android:id="@+id/searchItemRL1">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/prodImage"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="10dp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@android:color/background_light"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/prodImage"
+        android:id="@+id/searchItemRL2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/prodTitle"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/material_grey_800"
+            android:layout_alignParentEnd="false" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:background="@android:color/background_light"
+            android:layout_below="@+id/prodTitle"
+            android:layout_alignParentStart="false"
+            android:id="@+id/searchItemRL3">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/prodMRP"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_alignParentBottom="false"
+                android:layout_alignParentTop="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/prodCurrPrice"
+                android:layout_toEndOf="@+id/prodMRP"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_alignParentTop="false" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/prodStore"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="false"
+        android:layout_alignBottom="@+id/view"
+        android:layout_alignParentLeft="false"
+        android:scaleType="fitXY" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/prodImage"
+        android:layout_alignParentStart="false"
+        android:id="@+id/view"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
+
+<!--
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical|center_horizontal"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/dealImage"
+        android:contentDescription="@string/image"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/testimage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dealTitle"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/holo_blue_dark"
+        android:text="Fastrack P222GR1 Black Frame Wraparound Sunglasses"
+        android:singleLine="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/dealDescription"
+        android:textSize="12sp"
+        android:textColor="@android:color/holo_blue_light"
+        android:gravity="center_horizontal"
+        android:text="Attractive brand packaging Lens material: Polycarbonate Frame shape: Wraparound Disclaimer: Product colour may slightly vary due to photographic lighting sources or your monitor settings 100% UV protection Brand: Fastrack Product code: gk-P222GR1 Stylish sunglasses for women &amp; men Lens colour: Grey Frame colour: Black Frame material: Non Metal Frame size: Medium Comes in a protective casing" />
+
+</LinearLayout>-->
